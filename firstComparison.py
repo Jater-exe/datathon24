@@ -32,38 +32,6 @@ def compare_age(user1_age,user2_age):
     else:
         return abs(age1 - age2) <= 3
     
-#pre: any actual d'estudis d'un usuari
-#post: retorna true si els dos usuaris es troben en cursos pròxims
-def compare_years_study(user1_study, user2_study):
-    years_of_study_1 = user1_study
-    years_of_study_2 = user2_study
-
-    if years_of_study_1 == years_of_study_2:
-        return True
-    else:
-        if years_of_study_1 == "1st Year" and (years_of_study_2 != "3rd Year" or years_of_study_2 != "4th Year"):
-            return True
-        elif years_of_study_2 == "1st Year" and (years_of_study_1 != "3rd Year" or years_of_study_1 != "4th Year"):
-            return True
-        elif years_of_study_1 == "2nd Year" and years_of_study_2 != "4th Year":
-            return True
-        elif years_of_study_2 == "2nd Year" and years_of_study_1 != "4th Year":
-            return True
-        elif years_of_study_1 == "3rd Year" and years_of_study_2 != "1st Year":
-            return True
-        elif years_of_study_2 == "3rd Year" and years_of_study_1 != "1st Year":
-            return True
-        elif years_of_study_1 == "4th Year" and (years_of_study_2 != "1st Year" and years_of_study_2 != "2nd Year"):
-            return True
-        elif years_of_study_2 == "4th Year" and (years_of_study_1 != "1st Year" and years_of_study_1 != "2nd Year"):
-            return True
-        elif years_of_study_1 == "PhD" and years_of_study_2 == "Master's":
-            return True
-        elif years_of_study_1 == "Master's" and years_of_study_2 == "PhD":
-            return True
-        else:
-            return False
-
 
 #pre: entrada d'usuaris dels quals desconeixem la pertinença a un grup
 #post: true si s'aconsegueix agrupar l'usuari, false en cas contrari
