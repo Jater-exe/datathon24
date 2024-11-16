@@ -205,6 +205,9 @@ def index(user1, user2, challenges, languages, disp, rol, exp_level, studied_yea
     else:
         edat_index = 0
 
+
+    result = challenges_index*0.2 +languages_index*0.15 + disp_index*0.15 + rol_index*10 + exp_level_index*0.1 + anys_estudiats_index*0.1 + team_size_index*0.04 + hackatons_prev*0.03 +edat_index*0.03
+
     
 
 
