@@ -12,7 +12,6 @@ above30 = 0
 above0 = 0
 
 
-
 for i in range(0,325):
     for j in range(0,325):
         actual = f1.quoeficient(participants[i], participants[j])
