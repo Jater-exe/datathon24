@@ -136,6 +136,9 @@ def assign_user_to_group(user, users_data, groups):
     if len(groups) < len(users_data) // 2:
         groups.append([user['name']])
         return True
+def compare_years_study(years_of_study_1, years_of_study_2):
+    if years_of_study_1 == years_of_study_2:
+        return True
     else:
         if years_of_study_1 == "1st Year" and years_of_study_2 == "2nd Year":
             return True
