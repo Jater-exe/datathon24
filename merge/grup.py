@@ -13,7 +13,7 @@ class Grup:
     #group_UID: str
     group_members: List[str]
     full_group: bool
-    name_group: str
+    group_name: str
 
 def load_groups(path: str) -> List[Grup]:
     if not pathlib.Path(path).exists():
