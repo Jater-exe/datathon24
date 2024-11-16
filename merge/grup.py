@@ -1,13 +1,12 @@
 import json
 import pathlib
-import uuid
 from dataclasses import dataclass
 from typing import Dict, List, Literal
 
 
 @dataclass
 class Grup:
-    id: uuid.UUID  # Unique identifier
+    id: int
 
     #Group info
     group_size: 1
