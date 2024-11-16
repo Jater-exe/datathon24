@@ -92,17 +92,18 @@ def assign_user_to_group(user, users_data, groups):
 #pre: dos usuaris de la base de dades
 #post: true si els dos usuaris han participat en un nombre semblant de datathons +-1
 
-def have_similar_datathons(user1, user2, datathon_data):
+def have_similar_datathons(hack1, hack2, datathon_data):
     
     # Obte el nombre de datathons en que ha participat cada usuari 
-    datathons_user1 = datathon_data[user1]
-    datathons_user2 = datathon_data[user2]
+    datathons_user1 = datathon_data[hack1]
+    datathons_user2 = datathon_data[hack2]
     
     # Comprova que la diferencia maxima de datathon es com a molt 1
     return abs(datathons_user1 - datathons_user2) <= 1    
 
-
-def group_by_expertise(users_data, team_size=2):
+#pre: usuaris de la base de dades
+#post: agrupacio d'usuaris per nivell d'expertesa
+def group_by_expertise(expertise, team_size=2):
 
     # Inicialitza diccionaris que agrupen els usuaris per nivell d'expertesa 
     grouped_teams = {
@@ -119,7 +120,7 @@ def group_by_expertise(users_data, team_size=2):
     }
     
     # Itera sobre els usuaris del dataset per assignar-li a cadascu a cada grup temporal 
-    for user, expertise in users_data.items():
+    for user, expertise in expertise.items():
         if expertise in temp_groups:
             temp_groups[expertise].append(user)
             
@@ -136,20 +137,20 @@ def group_by_expertise(users_data, team_size=2):
     return grouped_teams
 
 
-def group_by_challenge_interests(users_data):
+def group_by_challenge_interests(interest):
 
     grouped_pairs = []
     ungrouped_users = []
     used_users = set()
 
     # Itera per el dataset per trobar parelles 
-    for i, user1 in enumerate(users_data):
+    for i, user1 in enumerate(interest):
         if user1['name'] in used_users:
             continue
         
         # Intentar trobar coincidencia per user1
         found_pair = False
-        for j, user2 in enumerate(users_data):
+        for j, user2 in enumerate(interest):
             if i == j or user2['name'] in used_users:
                 continue
             
