@@ -1,3 +1,6 @@
+
+import compare_languages, compare_availability, compare_prefered_role, compare_programming_skills, compare_age, compare_years_study, compare_datathons, compare_exp_level, compare_challenge, compare_group_size
+
 def quoeficient(user1, user2):
 
     #Calcul percentatge challenges
