@@ -1,1 +1,0 @@
-def compare_challenge()
