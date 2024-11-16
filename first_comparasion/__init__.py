@@ -7,9 +7,9 @@ from .comp_year_study import compare_years_study
 from .comp_exp_level import compare_exp_level
 from .comp_datathons import compare_datathons
 from .comp_exp_level import compare_exp_level
-#from .comp_challenge import compare_challenge
+from .comp_challenge import compare_challenge
 from .comp_group_size import compare_group_size
 
 
 __all__ = ["compare_availability", "compare_languages" , "compare_prefered_role", "compare_programming_skills", "compare_age", "compare_years_study", 
-           "compare_exp_level", "compare_datathons", " compare_exp_level", "compare_challlenge", "compare_group_size"]
+           "compare_exp_level", "compare_datathons", " compare_exp_level", "compare_challenge", "compare_group_size"]
