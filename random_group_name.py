@@ -49,7 +49,7 @@ class GroupNameGenerator:
                 self.used_combinations.add(combined_name)  
                 return combined_name
 
-generator = GroupNameGenerator()
-unique_group_name = generator.generate_unique_group_name()
+#*generator = GroupNameGenerator()
+#unique_group_name = generator.generate_unique_group_name()
 
-print(f"Unique Group Name: {unique_group_name}")
+#print(f"Unique Group Name: {unique_group_name}")#

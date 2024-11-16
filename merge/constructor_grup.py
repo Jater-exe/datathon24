@@ -1,4 +1,5 @@
 import json
+from random_group_name import GroupNameGenerator
 
 def constructor_group(group_members, group_size, full_group):
     try:
@@ -15,12 +16,16 @@ def constructor_group(group_members, group_size, full_group):
     else:  # Si no hay datos, empieza desde 1
         next_id = 1
 
+    generator = GroupNameGenerator()
+    unique_group_name = generator.generate_unique_group_name()
+
     # Añade el nuevo grupo con el ID incremental
     data.append({
         "id": next_id,
         "group_size": group_size,
         "group_members": group_members,
-        "full_group": full_group
+        "full_group": full_group,
+        "name_group": unique_group_name
     })
 
     # Guarda los datos actualizados en el archivo
