@@ -198,8 +198,21 @@ def group_by_expertise(expertise, team_size=2):
     
     return grouped_teams
 
+#PRE: Dues cadenes que representen els nivells Beginner, Intermediate o Advanced
+#POST: Un booleà si coincideixen (amb tolerància)
+def compare_exp_level(exp1, exp2):
+    if exp1 == exp2:
+        return True
+    elif exp1 == "Beginner" and exp2 == "Intermediate":
+        return True 
+    elif exp1 == "Intermediate" and exp2 == "Beginner":
+        return True
+    elif exp1 == "Advanced" and exp2 == "Beginner":
+        return True
+    else:
+        return False
 
-def compare_exp_level(interest):
+def compare_exp_level_group(interest):
 
     grouped_pairs = []
     ungrouped_users = []
