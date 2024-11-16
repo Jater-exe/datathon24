@@ -10,7 +10,8 @@ from .comp_exp_level import compare_exp_level
 from .comp_challenge import compare_challenge
 from .comp_group_size import compare_group_size
 from .index import quoeficient
+from .comp_users import compare_users
 
 
 __all__ = ["compare_availability", "compare_languages" , "compare_prefered_role", "compare_programming_skills", "compare_age", "compare_years_study", 
-           "compare_exp_level", "compare_datathons", " compare_exp_level", "compare_challenge", "compare_group_size", "quoeficient"]
+           "compare_exp_level", "compare_datathons", " compare_exp_level", "compare_challenge", "compare_group_size", "quoeficient", "compare_users"]
