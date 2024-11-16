@@ -20,9 +20,47 @@ def compare_programming_skills()
     
 #FORGAS___^^^^
     
-def compare_age()
+def compare_age(user1_age,user2_age):
+    age1 = user1_age
+    age2 = user2_age
+    if age1 > 25 and age2 > 25:
+        return True
+    elif age1 > 21 and age2 > 21:
+        return abs(age1 - age2) <= 4
+    else:
+        return abs(age1 - age2) <= 3
+    
 
-def compare_years_study()
+def compare_years_study(user1_study, user2_study):
+    years_of_study_1 = user1_study
+    years_of_study_2 = user2_study
+
+    if years_of_study_1 == years_of_study_2:
+        return True
+    else:
+        if years_of_study_1 == "1st Year" and (years_of_study_2 != "3rd Year" or years_of_study_2 != "4th Year"):
+            return True
+        elif years_of_study_2 == "1st Year" and (years_of_study_1 != "3rd Year" or years_of_study_1 != "4th Year"):
+            return True
+        elif years_of_study_1 == "2nd Year" and years_of_study_2 != "4th Year":
+            return True
+        elif years_of_study_2 == "2nd Year" and years_of_study_1 != "4th Year":
+            return True
+        elif years_of_study_1 == "3rd Year" and years_of_study_2 != "1st Year":
+            return True
+        elif years_of_study_2 == "3rd Year" and years_of_study_1 != "1st Year":
+            return True
+        elif years_of_study_1 == "4th Year" and (years_of_study_2 != "1st Year" and years_of_study_2 != "2nd Year"):
+            return True
+        elif years_of_study_2 == "4th Year" and (years_of_study_1 != "1st Year" and years_of_study_1 != "2nd Year"):
+            return True
+        else:
+            return False
+
+
+
+
+    
     
 #COSTA___^^^^
 
