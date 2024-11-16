@@ -15,7 +15,7 @@ above0 = 0
 
 for i in range(0,325):
     for j in range(0,325):
-        actual = f1.index(participants[i], participants[j])
+        actual = f1.quoeficient(participants[i], participants[j])
 
         if(actual > max):
             max = actual
