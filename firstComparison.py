@@ -11,14 +11,20 @@ participants = load_participants(data_path)
 def compare_languages(list)
     
 def compare_aviailability()
-    
+
+#JAUME__^^^^
+ 
 def compare_prefered_role()
     
 def compare_programming_skills()
     
+#FORGAS___^^^^
+    
 def compare_age()
 
 def compare_years_study()
+    
+#COSTA___^^^^
 
 def compareUsers(user1, user2):
     
