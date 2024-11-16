@@ -41,6 +41,10 @@ class Participant:
     future_excitement: str
     fun_fact: str
 
+    #Group info
+    group_size: 1
+    group_UID: str
+
 
 def load_participants(path: str) -> List[Participant]:
     if not pathlib.Path(path).exists():
