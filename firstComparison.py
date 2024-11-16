@@ -146,9 +146,6 @@ def compare_years_study(user1_study, user2_study):
 
 
 
-def compareUsers(user1, user2):
-
-
 
 def index(user1, user2, challenges, languages, disp, rol, exp_level, studied_years, team_size, hackatons_prev, edat):
 
