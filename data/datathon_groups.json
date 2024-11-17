@@ -1,72 +1,20 @@
 [
     {
         "id": 1,
-        "group_size": 4,
+        "group_size": 1,
         "group_members": [
-            "2ebad15c-c0ef-4c04-ba98-c5d98403a90c",
-            "a00428a2-14a2-4fb1-838a-22394778ec88",
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3",
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3"
+            "2ebad15c-c0ef-4c04-ba98-c5d98403a90c"
         ],
-        "full_group": true,
-        "group_name": "Visionary Summit Seekers"
+        "full_group": false,
+        "group_name": "Heroic Xi Guardians"
     },
     {
         "id": 2,
         "group_size": 1,
         "group_members": [
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3"
+            "2ebad15c-c0ef-4c04-ba98-c5d98403a90c"
         ],
         "full_group": false,
-        "group_name": "Majestic Lunar Guardians"
-    },
-    {
-        "id": 3,
-        "group_size": 1,
-        "group_members": [
-            "624f4677-d31a-4ecf-a7de-5df7392f9579"
-        ],
-        "full_group": false,
-        "group_name": "Swift Vanguard Dreamers"
-    },
-    {
-        "id": 4,
-        "group_size": 1,
-        "group_members": [
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3"
-        ],
-        "full_group": false,
-        "group_name": "Heroic Theta Guardians"
-    },
-    {
-        "id": 5,
-        "group_size": 2,
-        "group_members": [
-            "624f4677-d31a-4ecf-a7de-5df7392f9579",
-            "e3464b47-0c0a-41d7-9750-a21adb889205"
-        ],
-        "full_group": false,
-        "group_name": "Trailblazing Gamma Force"
-    },
-    {
-        "id": 1,
-        "group_size": 4,
-        "group_members": [
-            "2ebad15c-c0ef-4c04-ba98-c5d98403a90c",
-            "a00428a2-14a2-4fb1-838a-22394778ec88",
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3",
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3"
-        ],
-        "full_group": true,
-        "group_name": "Visionary Summit Seekers"
-    },
-    {
-        "id": 2,
-        "group_size": 1,
-        "group_members": [
-            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3"
-        ],
-        "full_group": false,
-        "group_name": "Majestic Lunar Guardians"
+        "group_name": "Elite Skyline Seekers"
     }
 ]

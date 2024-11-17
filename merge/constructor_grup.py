@@ -15,7 +15,6 @@ def constructor_group(group_members, group_size, full_group):
         next_id = max(group.get("id", 0) for group in data) + 1
     else:  # Si no hay datos, empieza desde 1
         next_id = 1
-
     generator = GroupNameGenerator()
     unique_group_name = generator.generate_unique_group_name()
 
