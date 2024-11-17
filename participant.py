@@ -44,6 +44,7 @@ class Participant:
     #Group info
     group_size: 1
     group_UID: str
+    group_name: str
 
 
 def load_participants(path: str) -> List[Participant]:
