@@ -23,7 +23,7 @@ def participant_to_dict(participant):
         "name": participant.name,
         "email": participant.email,
         "age": participant.age,
-        "year_of_study": participant.years_of_study,
+        "year_of_study": participant.year_of_study,
         "shirt_size": participant.shirt_size,
         "university": participant.university,
         "dietary_restrictions": participant.dietary_restrictions,
