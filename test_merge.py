@@ -16,6 +16,7 @@ try:
 except (json.JSONDecodeError, FileNotFoundError):
     grups = []  # Si el fitxer és buit o no existeix, crear una llista buida
 
+print(grups)
 # Realitzar les operacions necessàries
 grup_solo1 = grups[0] if len(grups) > 0 else None
 grup_solo2 = grups[1] if len(grups) > 1 else None

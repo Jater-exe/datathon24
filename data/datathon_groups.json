@@ -1,12 +1,13 @@
 [
     {
         "id": 1,
-        "group_size": 2,
+        "group_size": 3,
         "group_members": [
             "2ebad15c-c0ef-4c04-ba98-c5d98403a90c",
-            "a00428a2-14a2-4fb1-838a-22394778ec88"
+            "a00428a2-14a2-4fb1-838a-22394778ec88",
+            "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3"
         ],
-        "full_group": false,
+        "full_group": true,
         "group_name": "Visionary Summit Seekers"
     },
     {
