@@ -24,7 +24,8 @@ def constructor_group(group_members, group_size, full_group):
         "group_size": group_size,
         "group_members": group_members,
         "full_group": full_group,
-        "group_name": unique_group_name
+        "group_name": unique_group_name,
+        "request": ["none"]
     })
 
     # Guarda los datos actualizados en el archivo
@@ -47,6 +48,7 @@ def constructor_group(group_members, group_size, full_group):
         "group_size": group_size,
         "group_members": group_members,
         "full_group": full_group,
-        "group_name": unique_group_name
+        "group_name": unique_group_name,
+        "request": ["none"]
     }
     return new_group

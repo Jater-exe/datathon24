@@ -14,6 +14,7 @@ class Grup:
     group_members: List[str]
     full_group: bool
     group_name: str
+    request: List[str]
 
 def load_groups(path: str) -> List[Grup]:
     if not pathlib.Path(path).exists():
