@@ -42,3 +42,11 @@ def constructor_group(group_members, group_size, full_group):
         obj['group_name'] = unique_group_name
     with open('data/datathon_participants.json', 'w') as file:
         json.dump(data, file, indent=4)
+    new_group = {
+        "id": next_id,
+        "group_size": group_size,
+        "group_members": group_members,
+        "full_group": full_group,
+        "group_name": unique_group_name
+    }
+    return new_group

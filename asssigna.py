@@ -25,9 +25,9 @@ for obj in data_load_part:
     else:
         new_group = constructor_group([obj.id], 1, True)
     data_load_group.append(new_group)
-    obj.group_size = new_group.group_size
-    obj.group_UID = new_group.id
-    obj.group_name = new_group.group_name
+    obj.group_size = new_group['group_size']
+    obj.group_UID = new_group['id']
+    obj.group_name = new_group['group_name']
 
 final_part = participant_to_dict(data_load_part)
 final_group = grup_to_dict(data_groups)
