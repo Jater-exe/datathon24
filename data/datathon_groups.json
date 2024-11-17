@@ -38,9 +38,10 @@
     },
     {
         "id": 5,
-        "group_size": 1,
+        "group_size": 2,
         "group_members": [
-            "624f4677-d31a-4ecf-a7de-5df7392f9579"
+            "624f4677-d31a-4ecf-a7de-5df7392f9579",
+            "e3464b47-0c0a-41d7-9750-a21adb889205"
         ],
         "full_group": false,
         "group_name": "Trailblazing Gamma Force"
